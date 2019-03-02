@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RandomUser</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+	<div id="chart">
+		<button id="myBtn">Show Chart</button>
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div id = "genderChart" class="canvassize"  style="min-width: 600px; height: 400px; max-width: 1000px; margin: 0 auto"><canvas id="Chart" width="450" height="450"></canvas></div>
+			</div>
+		</div>
+	<input class="form-control" type="text" placeholder="First Name" id="search-text" onkeyup="tableSearch()">
+	<div id="result">
+	</div>
+	</div>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="script.js"></script>
+<script src="moreinfo.js"></script>
+<script src="chart.js"></script>	
+</body>
+</html>
